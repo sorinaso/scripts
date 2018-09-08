@@ -6,7 +6,7 @@ echo "Repitiendo ${REPEAT_TIMES} veces con timeout de ${PULL_TIMEOUT}"
 
 for d in $(seq 1 $REPEAT_TIMES)
 do
-  trap "exit 1;" INT KILL
+  trap "exit 1;" SIGHUP SIGINT SIGTERM
   
   echo "Repeticion numero ${d}:"
 
