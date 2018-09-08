@@ -1,5 +1,5 @@
-#PULL_TIMEOUT=60s
-#REPEAT_TIMES=10
+PULL_TIMEOUT=${PULL_TIMEOUT?"Se debe definir PULL_TIMEOUT ejemplo: 60s"}
+REPEAT_TIMES=${REPEAT_TIMES?"Se debe definir REPEAT_TIMES ejemplo: 10"}
 
 echo "Repitiendo ${REPEAT_TIMES} veces con timeout de ${PULL_TIMEOUT}"
 
