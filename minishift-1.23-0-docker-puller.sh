@@ -1,4 +1,4 @@
-PULL_TIMEOUT=3s
+PULL_TIMEOUT=60s
 REPEAT_TIMES=10
 
 for d in $(seq 1 $REPEAT_TIMES); do timeout $PULL_TIMEOUT docker pull openshift/origin-control-plane:v3.10; done;
