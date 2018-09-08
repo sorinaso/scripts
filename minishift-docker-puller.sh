@@ -17,9 +17,9 @@ do
     #timeout $PULL_TIMEOUT docker pull openshift/origin-cli:v3.10
     ;;
   1.23.0)
-    timeout $PULL_TIMEOUT docker pull openshift/origin:v3.10.0
-    timeout $PULL_TIMEOUT docker pull openshift/origin-control-plane:v3.10
-    timeout $PULL_TIMEOUT docker pull openshift/origin-cli:v3.10
+    #timeout $PULL_TIMEOUT docker pull openshift/origin:v3.10.0
+    #timeout $PULL_TIMEOUT docker pull openshift/origin-control-plane:v3.10
+    #timeout $PULL_TIMEOUT docker pull openshift/origin-cli:v3.10
     timeout $PULL_TIMEOUT docker pull openshift/origin-node:v3.10
     ;;
   *)
