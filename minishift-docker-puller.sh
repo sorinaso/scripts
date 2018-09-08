@@ -1,4 +1,5 @@
-# Para correrlo bash <(curl -s http://mywebsite.com/myscript.txt)
+# Para correrlo bash: 
+# PULL_TIMEOUT=120s REPEAT_TIMES=20 MINISHIFT_VERSION=1.23.0 bash <(curl -s https://github.com/sorinaso/scripts/raw/master/minishift-docker-puller.sh)
 
 PULL_TIMEOUT=${PULL_TIMEOUT?"Se debe definir PULL_TIMEOUT ejemplo: 60s"}
 REPEAT_TIMES=${REPEAT_TIMES?"Se debe definir REPEAT_TIMES ejemplo: 10"}
