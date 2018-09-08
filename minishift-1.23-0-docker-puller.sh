@@ -1,5 +1,5 @@
-PULL_TIMEOUT=60s
-REPEAT_TIMES=10
+#PULL_TIMEOUT=60s
+#REPEAT_TIMES=10
 
 echo "Repitiendo ${REPEAT_TIMES} veces con timeout de ${PULL_TIMEOUT}"
 
