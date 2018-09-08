@@ -4,10 +4,10 @@ MINISHIFT_VERSION=${MINISHIFT_VERSION?"Se debe definir MINISHIFT_VERSION ejemplo
 
 echo "Repitiendo ${REPEAT_TIMES} veces con timeout de ${PULL_TIMEOUT}"
 
-trap "exit 1;" INT KILL
-
 for d in $(seq 1 $REPEAT_TIMES)
 do
+  trap "exit 1;" INT KILL
+  
   echo "Repeticion numero ${d}:"
 
   case $MINISHIFT_VERSION in
