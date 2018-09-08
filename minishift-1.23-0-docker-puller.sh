@@ -7,5 +7,6 @@ for d in $(seq 1 $REPEAT_TIMES)
 do 
   echo "Repeticion numero ${d}:"
   
+  timeout $PULL_TIMEOUT docker pull openshift/origin:v3.10.0
   timeout $PULL_TIMEOUT docker pull openshift/origin-control-plane:v3.10 
 done
