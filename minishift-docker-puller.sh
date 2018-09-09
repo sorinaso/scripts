@@ -27,7 +27,6 @@ do
     get_docker_image "openshift/origin-control-plane:v3.10"
     get_docker_image "openshift/origin-cli:v3.10"
     get_docker_image "openshift/origin-node:v3.10"
-    get_docker_image "openshift/origin-node:v3.10"
     ;;
   *)
     echo "Version de Minishift ${MINISHIFT_VERSION} no manejada."
