@@ -6,8 +6,6 @@ MINISHIFT_VERSION=${MINISHIFT_VERSION?"Se debe definir MINISHIFT_VERSION ejemplo
 
 echo "Repitiendo ${REPEAT_TIMES} veces con timeout de ${PULL_TIMEOUT}"
 
-set -xe
-
 function get_docker_image () {
   (docker inspect --type=image $1 > /dev/null) && echo "La imagen $1 existe." || (timeout $PULL_TIMEOUT docker pull $1)
 }
